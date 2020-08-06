@@ -1,6 +1,15 @@
-cn\qphone\ssm\pojo\Emp.class
-cn\qphone\ssm\mapper\EmpMapper.class
+cn\qphone\ssm\pojo\User.class
+cn\qphone\ssm\web\controller\UserController.class
+cn\qphone\ssm\service\impl\UserServiceImpl.class
 cn\qphone\ssm\web\listener\MyListener.class
+cn\qphone\ssm\mapper\GroupsMapper.class
 cn\qphone\ssm\service\impl\EmpServiceImpl.class
+cn\qphone\ssm\service\impl\GroupsServiceImpl.class
 cn\qphone\ssm\web\controller\EmpController.class
 cn\qphone\ssm\service\EmpService.class
+cn\qphone\ssm\pojo\Emp.class
+cn\qphone\ssm\service\GroupsService.class
+cn\qphone\ssm\pojo\Groups.class
+cn\qphone\ssm\mapper\EmpMapper.class
+cn\qphone\ssm\mapper\UserMapper.class
+cn\qphone\ssm\service\UserService.class

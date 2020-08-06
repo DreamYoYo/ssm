@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.qphone.ssm.mapper.UserMapper">
+    <!-- 根据用户名查询用户信息 -->
+    <select id="get" parameterType="java.lang.String" resultType="cn.qphone.ssm.pojo.User">
+        SELECT * FROM users WHERE username = #{username}
+    </select>
+
+    <select id="getUser" parameterType="int" resultType="cn.qphone.ssm.pojo.User">
+        SELECT * FROM users WHERE id = #{id}
+    </select>
+
+    <select id="list"  resultType="cn.qphone.ssm.pojo.User">
+        SELECT * FROM users
+    </select>
+
+    <insert id="insert" parameterType="cn.qphone.ssm.pojo.User">
+        INSERT INTO users(username, password, group_id) VALUES(#{username}, #{password}, #{group_id})
+    </insert>
+
+    <delete id="delete" parameterType="int">
+        DELETE FROM users WHERE id = #{id}
+    </delete>
+    
+    <update id="update" parameterType="cn.qphone.ssm.pojo.User">
+        Update users SET username = #{username}, password = #{password}, group_id=#{group_id} WHERE id = #{id}
+    </update>
+</mapper>

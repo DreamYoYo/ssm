@@ -25,6 +25,7 @@
                      <tx:method name="update*" read-only="false" isolation="DEFAULT" propagation="REQUIRED"/>
                      <tx:method name="insert*" read-only="false" isolation="DEFAULT" propagation="REQUIRED"/>
                      <tx:method name="trans*" read-only="false" isolation="DEFAULT" propagation="REQUIRED"/>
+                     <tx:method name="regist*" read-only="false" isolation="DEFAULT" propagation="REQUIRED"/>
                      <tx:method name="*" read-only="true" />
               </tx:attributes>
        </tx:advice>
