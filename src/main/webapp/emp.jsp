@@ -13,7 +13,7 @@
 <body>
     <%
         Emp emp = (Emp)request.getAttribute("emp");
-        response.getWriter().println(emp.getName());
+        response.getWriter().println(emp);
     %>
 </body>
 </html>

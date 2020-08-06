@@ -7,7 +7,7 @@
 
        <!-- datasource -->
        <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-              <property name="jdbcUrl" value="jdbc:mysql://192.168.49.201:3306/user" />
+              <property name="jdbcUrl" value="jdbc:mysql://192.168.10.102:3306/user" />
               <property name="driverClass" value="com.mysql.jdbc.Driver" />
               <property name="user" value="root" />
               <property name="password" value="123456" />
